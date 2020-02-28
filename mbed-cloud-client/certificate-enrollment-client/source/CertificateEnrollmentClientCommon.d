@@ -1,0 +1,32 @@
+BUILD\libraries\pelion-L475\DISCO_L475VG_IOT01A\ARM\mbed-cloud-client\certificate-enrollment-client\source\CertificateEnrollmentClientCommon.o: \
+  mbed-cloud-client\certificate-enrollment-client\source\CertificateEnrollmentClientCommon.cpp \
+  BUILD\libraries\pelion-L475\DISCO_L475VG_IOT01A\ARM\mbed_config.h \
+  mbed-cloud-client\certificate-enrollment-client\source\include\CertificateEnrollmentClientCommon.h \
+  mbed-cloud-client\mbed-client\mbed-client\m2mresource.h \
+  mbed-cloud-client\mbed-client\mbed-client\m2mvector.h \
+  mbed-cloud-client\mbed-client\mbed-client\m2mresourcebase.h \
+  mbed-cloud-client\mbed-client\mbed-client\m2mbase.h \
+  mbed-cloud-client\mbed-client\mbed-client\m2mconfig.h \
+  mbed-cloud-client\mbed-client\mbed-client\m2mstring.h \
+  mbed_cloud_client_user_config.h \
+  mbed-cloud-client\mbed-client\mbed-client\m2mreportobserver.h \
+  mbed-cloud-client\mbed-client\mbed-client\functionpointer.h \
+  mbed-cloud-client\mbed-client\mbed-client\m2mstringbuffer.h \
+  mbed-cloud-client\mbed-client\mbed-client\m2mstringbufferbase.h \
+  mbed-cloud-client\mbed-client\mbed-client-c\nsdl-c\sn_nsdl.h \
+  mbed-os\features\frameworks\mbed-coap\mbed-coap\sn_coap_header.h \
+  mbed-cloud-client\mbed-client\mbed-client-c\nsdl-c\sn_nsdl_lib.h \
+  mbed-os\features\frameworks\nanostack-libservice\mbed-client-libservice\ns_list.h \
+  mbed-os\features\frameworks\nanostack-libservice\mbed-client-libservice\ns_types.h \
+  mbed-cloud-client\mbed-client\mbed-client-c\nsdl-c\sn_client_config.h \
+  mbed-cloud-client\mbed-client\mbed-client\m2mresourceinstance.h \
+  mbed-cloud-client\mbed-client\mbed-client\coap_response.h \
+  mbed-cloud-client\certificate-enrollment-client\certificate-enrollment-client\ce_defs.h \
+  mbed-cloud-client\certificate-enrollment-client\certificate-enrollment-client\ce_status.h \
+  mbed-cloud-client\certificate-enrollment-client\certificate-enrollment-client\CertificateEnrollmentClient.h \
+  mbed-cloud-client\mbed-client\mbed-client\m2minterface.h \
+  mbed-os\features\frameworks\mbed-coap\mbed-coap\sn_coap_protocol.h \
+  mbed-os\features\frameworks\mbed-coap\mbed-coap\sn_coap_header.h \
+  mbed-cloud-client\certificate-enrollment-client\certificate-enrollment-client\ce_defs.h \
+  mbed-cloud-client\source\include\EstClient.h \
+  mbed-cloud-client\mbed-cloud-client\est_defs.h
