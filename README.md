@@ -1,12 +1,15 @@
-# Pelion Device Management Client example for Mbed OS
+# Pelion DM - pre-compiled version
 
-Note this is guide and example on how to generate a pre-compiled version of the application.
-This repository is expected to be used out of the box with Mbed CLI and Mbed Studio for the DISCO_L475VG_IOT01A and the Arm Compiler 6.13 (supported in Mbed OS 5.15.1)
+Note this is guide on how to generate a pre-compiled version of the application for Mbed OS and Pelion DM.
+In addition, this repository is expected to be used out of the box with Mbed CLI and Mbed Studio for the DISCO_L475VG_IOT01A and the Arm Compiler 6.13 (supported in Mbed OS 5.15.1)
 
 ### Preparing a pre-compiled application
 
-1. Import the application with all source code
+(skip if you only want to use it)
 
+Overview: the process consist on replacing the source code with the objects pre-compiled and leave the python tools in place.
+
+1. Import the application with all source code
 
 ```
 mbed import https://github.com/ARMmbed/mbed-os-example-pelion
@@ -38,7 +41,7 @@ mbed compile --library --no-archive -t ARM -m DISCO_L475VG_IOT01A
 
 The generated objects should be in `.\BUILD\libraries`
 
-4. Deleting unused source code
+4. Deleting unused source code from root directory
 
 - mbed-cloud-client.lib
 - mbed-cloud-client
@@ -53,7 +56,7 @@ The generated objects should be in `.\BUILD\libraries`
 - mbed-os\rtos
 - mbed-os\targets
 
-5. Install pre-compiled objects
+5. Move pre-compiled objects
 
 From pre-compiled location: `BUILD\libraries\<app-name>\DISCO_L475VG_IOT01A\ARM\
 
@@ -68,6 +71,7 @@ From pre-compiled location: `BUILD\libraries\<app-name>\DISCO_L475VG_IOT01A\ARM\
 - mbed-os\rtos --> root/mbed-os/
 - mbed-os\targets --> root/mbed-os/
 
+Note: it's possible to integrate all objects from other libraries in a single repository as explained above. This is known to work ok with Mbed CLI but not with Mbed Studio. Hence I've had to move the pre-compiled Mbed OS to an external repository and re-introduce [mbed-os.lib](https://github.com/MarceloSalazar/mbed-os-example-pelion-DISCO_L475VG_IOT01A/blob/master/mbed-os.lib).
 
 ### Using this example with Mbed CLI
 
@@ -113,3 +117,10 @@ Total Flash memory (text + data): 365774(+365774) bytes
 
 ### Using this example with Mbed Studio
 
+Note: these steps including a workround due to current limitations of Mbed Studio to recognize this example as Pelion DM compatible.
+
+1. Import application and past the URL of this example
+
+2. Find credentials that have been generated already for another project (either with Mbed Studio or Mbed CLI). Copy and paste the content in the file [mbed_cloud_dev_credentials.c](https://github.com/MarceloSalazar/mbed-os-example-pelion-DISCO_L475VG_IOT01A/blob/master/mbed_cloud_dev_credentials.c)
+
+3. Compile & program
